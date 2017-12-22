@@ -11,6 +11,7 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -27,16 +28,24 @@
     <!--Main Navigation-->
     <header>    
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar ">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar ">
             <div class="container-fluid" id="navbarmain">
                 
-                <a class="navbar-brand" href="sample.html" data-padding-shrink="9" data-minheight="24"><img src="TEDxlogow.svg" id="tmrtlogo" alt="logo" style="float:left;height:55px;" /></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <a class="navbar-brand" href="sample.html" data-padding-shrink="9" data-minheight="24"><img src="TEDxlogob.svg" id="tmrtlogo" alt="logo" style="float:left;height:55px;"></a>
+                
+                
+                
+                <div id="nav-icon3" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                      
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                
+                </div>
                 <div class="navbar-collapse collapse" id="navbarSupportedContent-7">
                     <div class="col-md-9 col-xs-12">
-                        <ul class="navbar-nav ml-1" class="width:100%">                        
+                        <ul class="navbar-nav ml-1 desktop-only" class="width:100%">                        
                             <li class="nav-item menu--adsila">
                                 <a class="nav-link menu__item" href="#about"><span class="menu__item-name">ABOUT</span></a>
                             </li>
@@ -56,30 +65,75 @@
                                     <li><a class="dropdown-item" href="">BECOME OUR PARTNER</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item menu--adsila">
+                            <li class="nav-item menu--adsila ">
                                 <a class="nav-link menu__item" href="#"><span class="menu__item-name">BLOG</span></a>
                             </li>
                             <li class="nav-item menu--adsila">
                                 <a class="nav-link menu__item" href="#"><span class="menu__item-name">TEAM</span></a>
                             </li>
                             <li class="nav-item menu--adsila">
-                                <a class="nav-link menu__item mr-3" href="#"><span class="menu__item-name">CONTACT</span></a>
+                                <a class="nav-link menu__item" href="#"><span class="menu__item-name">CONTACT</span></a>
+                            </li>                        
+                        </ul>
+                        
+                        <ul class="navbar-nav ml-1 mobile-only flex-center" class="width:100%">                        
+                            <li class="nav-item menu--adsila">
+                                <a class="nav-link menu__item" href="#about"><span class="menu__item-name">ABOUT</span></a>
+                            </li>
+                            <li class="nav-item dropdown menu--adsila">
+                                <a class="nav-link dropdown-toggle menu__item" data-toggle="dropdown" href="#"><span class="menu__item-name">EVENTS & SPEAKERS </span><span class="caret"></span></a>
+                                <ul class="dropdown-menu">                                    
+                                    <li><a class="dropdown-item" href="">SALON</a></li>
+                                    <li><a class="dropdown-item" href="">SPEAKERS 18</a></li>
+                                    <li><a class="dropdown-item" href="">TEDx SVV 17</a></li>
+                                </ul>
+                            </li>                           
+                            <li class="nav-item dropdown menu--adsila">
+                                <a class="nav-link dropdown-toggle menu__item" data-toggle="dropdown" href="#"><span class="menu__item-name">GET INVOLVED </span> <span class="caret"></span></a>
+                                <ul class="dropdown-menu">                                    
+                                    <li><a class="dropdown-item" href="">REGISTER FOR EVENT</a></li>
+                                    <li><a class="dropdown-item" href="">NOMINATE A SPEAKER</a></li>
+                                    <li><a class="dropdown-item" href="">BECOME OUR PARTNER</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item menu--adsila ">
+                                <a class="nav-link menu__item" href="#"><span class="menu__item-name">BLOG</span></a>
+                            </li>
+                            <li class="nav-item menu--adsila">
+                                <a class="nav-link menu__item" href="#"><span class="menu__item-name">TEAM</span></a>
+                            </li>
+                            <li class="nav-item menu--adsila">
+                                <a class="nav-link menu__item" href="#contact"><span class="menu__item-name">CONTACT</span></a>
                             </li>                        
                         </ul>
                     </div>
-                    <div class="col-md-3 col-xs-12 text-md-right" style="border-left:1px solid #fff;height:auto">
+                    <div class="desktop-only col-md-3 col-xs-12 text-md-right" style="border-left:1px solid #000;height:auto">
                         <!--Facebook-->
-                        <a href=""><i class="fa fa-facebook white-text mx-3"> </i></a>
+                        <a href=""><i class="fa fa-facebook black-text mr-3"> </i></a>
                         <!--Twitter-->
-                        <a href=""><i class="fa fa-twitter white-text mr-3"> </i></a>
+                        <a href=""><i class="fa fa-twitter black-text mr-3"> </i></a>
                         <!--Youtube-->
-                        <a href=""><i class="fa fa-youtube white-text mr-3"> </i></a>
+                        <a href=""><i class="fa fa-youtube black-text mr-3"> </i></a>
                         <!--Linkedin-->
-                        <a href=""><i class="fa fa-linkedin white-text mr-3"> </i></a>
+                        <a href=""><i class="fa fa-linkedin black-text mr-3"> </i></a>
                         <!--Instagram-->
-                        <a href=""><i class="fa fa-instagram white-text mr-3"> </i></a>
+                        <a href=""><i class="fa fa-instagram black-text mr-3"> </i></a>
                         <!--Flickr-->
-                        <a href=""><i class="fa fa-flickr white-text mr-3"> </i></a>
+                        <a href=""><i class="fa fa-flickr black-text mr-3"> </i></a>
+                    </div>
+                    <div class="mobile-only col-md-3 col-xs-12 flex-center">
+                        <!--Facebook-->
+                        <a href=""><i class="fa fa-facebook black-text mx-3"> </i></a>
+                        <!--Twitter-->
+                        <a href=""><i class="fa fa-twitter black-text mx-3"> </i></a>
+                        <!--Youtube-->
+                        <a href=""><i class="fa fa-youtube black-text mx-3"> </i></a>
+                        <!--Linkedin-->
+                        <a href=""><i class="fa fa-linkedin black-text mx-3"> </i></a>
+                        <!--Instagram-->
+                        <a href=""><i class="fa fa-instagram black-text mx-3"> </i></a>
+                        <!--Flickr-->
+                        <a href=""><i class="fa fa-flickr black-text mx-3"> </i></a>
                     </div>
                 </div>
             </div>
@@ -156,7 +210,7 @@
                 <div class="row py-5 px-5">                    
                     <!--Grid columns-->
                     <div class="col-md-6 col-xs-12 text-left highlighttext  wow fadeInRight">
-                        <h4 class="highlighter"><span class="highlighter-name">What is <b>TEDxSomaiyaVidyavihar ?</b></span></h4>
+                        <h4 class="highlighter"><span class="highlighter-name">What is <b>TEDxSomaiyaVidyavihar?</b></span></h4>
                         <p class="font-italic">In the maiden edition of TEDxSomaiyaVidyavihar, we aim to establish innovative thinking among young minds, thus
                         motivating them to become responsible citizens of the world. Our vision is to make TEDx Somaiya Vidyavihar a platform where the trailblazers of our society can showcase ideas that impart knowledge and inspire our community.</p>
                     </div>
@@ -210,8 +264,47 @@
 
             </div>
         </div>
+        
         <!--End Theme-->
+        <!--Start Contact-->
+        <div id="contact">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12 pt-5">
 
+                            <div class="col-12">
+                                <div class="highlighttext">                            
+                                    <h2 class="highlighter" data-wow-delay="0.3s"  style="color:#e62b1e"><span class=" highlighter-name"><b>CONTACT</b></span></h2>   
+                                </div> <br>
+                                <h4>Subscribe to our newsletter</h4><br>
+                                
+                                <div class="highlighttext">                            
+                                    <h4 class="highlighter" data-wow-delay="0.3s"  style="color:#e62b1e"><span class=" highlighter-name"><b>For further queries:</b></span></h4>   
+                                </div> <br>
+                                <p><span class="glyphicon glyphicon-phone ml-4"></span> Ayush Shukla : +91 9999999999</p>
+                                <p><span class="glyphicon glyphicon-envelope ml-4"></span> ayush@somaiya.edu</p>
+                                <br>                                        
+                                <p><span class="glyphicon glyphicon-phone ml-4"></span> Ayush Shukla : +91 9999999999</p>
+                                <p><span class="glyphicon glyphicon-envelope ml-4"></span> ayush@somaiya.edu</p>
+                            </div>
+
+                    </div>
+                    
+                    <div id="map" class="col-sm-6 col-xs-12 pt-5 px-0">
+                        <iframe width=100% height=100% frameborder="0" style="border:1px solid #e62b1e;z-index: -1;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJf3iBnifG5zsRYLpPMcdMXSQ&key=AIzaSyDRBmZOu_TAou6zkVtGTcVuji2tnush-Kg" allowfullscreen>
+                        </iframe>
+                        <div id="filtermap" style="width=100%;height=100%">
+                        
+                    </div>
+                    </div>
+                    
+                        
+                </div>
+            </div>
+    
+        </div>
+        <!--End Contact-->
     </main>
     <!--Main Layout-->
     
@@ -225,13 +318,13 @@
                 <div class="row py-4 d-flex align-items-center">
 
                     <!--Grid column-->
-                    <div class="col-md-8 col-xs-12">
+                    <div class="col-md-11 col-xs-12">
                         <h6 class="mb-0 white-text my-2">This independent TEDx event is operated under license from TED. <br>Copyright © TEDxSomaiyaVidyavihar 2017. All rights reserved.</h6>
                     </div>
                     <!--Grid column-->
 
                     <!--Grid column-->
-                    <div class="col-md-4 col-xs-12 text-md-right textxs-center">
+                    <div class="col-md-1 col-xs-12 flex-center">
                         <!--Facebook-->
                         <a href=""><i class="fa fa-facebook white-text mx-4"> </i></a>
                         <!--Twitter-->
@@ -263,6 +356,13 @@
         new WOW().init();
     </script>
     
+    <script>
+        $(document).ready(function(){
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+    </script>
     
 
 </body>
