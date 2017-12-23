@@ -1288,7 +1288,7 @@ a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]
 
 .flex-center ul {
   list-style-type: none;
-  padding: 0; }
+  }
 
 .media .avatar-sm {
   width: 56px;
@@ -4861,7 +4861,8 @@ a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]
   .flex-center ul {
     text-align: center; }
     .flex-center ul li {
-      margin-bottom: 1rem; }
+      margin-bottom: 0.1rem;
+        margin-top: 0.1rem;}
 
 @media (max-width: 992px) {
   .hidden-md-down {
@@ -5854,7 +5855,7 @@ button:focus {
 
 .dropdown .dropdown-menu .dropdown-item:hover, .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:focus {
   color: #000;
-  background-color: #e2e2e2; }
+}
 
 
 
@@ -5903,17 +5904,34 @@ button:focus {
     @media (max-width: 992px) {
       .navbar .nav-item .nav-link {
         padding-left: 6px;
-        padding-right: 6px; } }
+          padding-right: 6px; }}
+    @media (min-width: 991px) {
+ .navbar .dropdown-menu { 
+    margin-top:0px; 
+     border:1px solid aqua;
+     border-radius: 0px;
+}
+
+}
   .navbar .dropdown-menu {
     position: absolute !important;
-    margin:0px; }
+    margin-top:24px;
+    padding-bottom:0px;
+}
     .navbar .dropdown-menu a {      
       font-weight: 300;
-      padding: 10px;        
+      padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;        
       color: #000 !important; }
       .navbar .dropdown-menu a:hover {
         color: #e62b1e !important; }
     @media (max-width: 600px) {
+        .navbar a {
+            text-align: center;
+            padding:0px;
+        }
       .navbar .dropdown-menu.dropdown-menu-right {
         right: auto !important; } }
   .navbar.navbar-light .navbar-toggler-icon {
@@ -6020,8 +6038,8 @@ button:focus {
       .navbar.scrolling-navbar {
         -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
         transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-        padding-top: 12px;
-        padding-bottom: 12px; }
+        padding-top: 5px;
+        padding-bottom: 5px; }
         .navbar.scrolling-navbar .navbar-nav > li {
           -webkit-transition-duration: 1s;
           transition-duration: 1s; }

@@ -3636,6 +3636,14 @@ tbody.collapse.show {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+    
+}
+
+@media (max-width: 550px) {
+    .navbar-nav {
+        padding-top: 10px;
+        padding-bottom:10px;
+    }
 }
 
 .navbar-nav .nav-link {
@@ -3659,6 +3667,7 @@ tbody.collapse.show {
 .navbar-nav .dropdown-menu {
   position: static;
   float: none;
+    
     
 }
 
