@@ -1,6 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,600,400italic);
+
 body{
     font-family: 'Raleway';
+    font-weight:400;
 }
 .intro {
     background: url("")no-repeat center center;
@@ -36,6 +37,18 @@ body{
 .navbar:not(.top-nav-collapse) {
     background: rgba(255, 255, 255, 0.4) !important;
 }
+#iconnav{
+    color:#000 !important;;
+}
+#iconnav:hover{
+    color:aqua !important;;
+}
+#iconftr{
+    color:#fff !important;;
+}
+#iconftr:hover{
+    color:#e62b1e !important;;
+}
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
         background: #fff !important;
@@ -44,8 +57,7 @@ body{
     position: relative !important;
     margin:0px; }    
     .navbar .dropdown-menu a {
-      color: #e62b1e !important; }
-    
+      color: #e62b1e !important; }    
 }
 
 h6 {
@@ -98,7 +110,8 @@ h6 {
 
 
 .menu--adsila .menu__item-name {	
-	padding: 0 0.35em;	
+	padding-left: 0.35em;
+
 
 }
 
@@ -127,7 +140,7 @@ h6 {
 
 @media screen and (max-width: 50em) {
 	.menu--adsila .menu__item {
-		margin: 0 0 2em;
+		margin: 0.25em 0 0.25em;
 	}
 }
 
