@@ -44,7 +44,7 @@ body{
     color:aqua !important;;
 }
 #iconftr{
-    color:#fff !important;;
+    color:#000 !important;;
 }
 #iconftr:hover{
     color:#e62b1e !important;;
@@ -290,4 +290,10 @@ h6 {
     background: rgba(123, 255, 255, 0.5);
     z-index:0;
     
+}
+
+.main-login{
+    background-color: #e2e2e2;
+
+    padding: 25px 40px 25px;
 }
