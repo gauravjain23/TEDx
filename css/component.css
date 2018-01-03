@@ -18,8 +18,8 @@ float: left;
         padding:22px;
         width: 33%;        	
     }
-    .grid figcaption {
-        
+    .grid figcaption p{
+        padding-top:30px;
     }
     
         /* Hover effects */
@@ -63,10 +63,8 @@ float: left;
 }
 
 .grid figcaption h2 {	
-
-	text-transform: uppercase;
 	font-weight: 300;
-	font-size: 130%;
+    font-size:16px;
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
 	transition: opacity 0.3s, transform 0.3s;
     	-webkit-transform: translateY(0px) scale(1);
@@ -74,7 +72,7 @@ float: left;
 }
 
 .grid figcaption p {
-
+    font-size:15px;
 	font-weight: 300;
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
 	transition: opacity 0.3s, transform 0.3s;
@@ -146,6 +144,7 @@ float: left;
 	transition: opacity 0.3s, transform 0.3s;
 }
 
+
 .grid .aqua {
     color:#000;
 }
@@ -164,7 +163,22 @@ float: left;
 	opacity: 0;
 }
 
+.grid figure button,{
+	top: 50%;
+	left: 50%;
+	border: 3px solid #fff;
+	background: transparent;
+	color: #fff;
+	opacity: 0;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
+	transform: translateY(-50%) translateX(-50%) scale(0.25);
+}
 
+.grid a:hover figure button {
+	opacity: 1;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+	transform: translateY(-50%) translateX(-50%) scale(1);
+}
 
 
 /* Media Queries */
