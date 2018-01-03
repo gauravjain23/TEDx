@@ -1,16 +1,45 @@
 /* Common style */
 .grid {
-	margin: 10px auto 20px;
+	
     max-width: 1000px;
-	width: 90%;
+
 }
 
 .grid a {
-	float: left;
-	max-width: 275px;
-	width: 33%;
+        	max-width: 275px;
+float: left;
+
 	color: #333;   
-    padding:22px;
+
+}
+
+@media screen and (min-width: 551px) {
+    .grid {
+        margin: 10px auto 20px;
+        	width: 90%;
+    }
+    .grid a {
+    
+        padding:22px;
+        width: 33%;
+        	
+    }
+    .grid figcaption {
+        padding: 10px;
+    }
+    .grid figcaption h2 {
+	   margin: 0 0 20px 0;
+        
+    }
+    
+        /* Hover effects */
+
+
+    .grid a:hover figcaption h2,
+    .grid a:hover figcaption p {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
 }
 
 .grid figure {
@@ -53,7 +82,7 @@
 }
 
 .grid figcaption p {
-	padding: 0 0px;
+
 	color: #fff;
 	font-weight: 300;
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -109,14 +138,7 @@
 	fill: #e23d4a;
 }
 
-/* Hover effects */
 
-
-.grid a:hover figcaption h2,
-.grid a:hover figcaption p {
-	-webkit-transform: translateY(20px);
-	transform: translateY(20px);
-}
 
 .grid a:hover figcaption p {
 	opacity: 1;
@@ -133,9 +155,29 @@
 /* Let's redefine the width of each anchor and the margins */
 
 @media screen and (max-width: 550px) {
+    .grid {
+        width:100%;
+    }
 	.grid a {
-		width: 50%;
+		width: 45%;
+        margin: 7px;
+        font-size:10px;
 	}
+    .grid figcaption {
+        padding: 5px;
+    }
+    .grid figcaption p {
+        font-size:12px;
+    }
+    
+    /* Hover effects */
+
+
+.grid a:hover figcaption h2,
+.grid a:hover figcaption p {
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+}
 
 
 
