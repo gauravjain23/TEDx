@@ -1266,7 +1266,7 @@
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 a {
-  color: #0275d8;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent; }
@@ -7154,8 +7154,8 @@ textarea.md-textarea {
   input[type=search-md]:focus:not([readonly]),
   input[type=search]:focus:not([readonly]),
   textarea.md-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #4285F4;
-    box-shadow: 0 1px 0 0 #4285F4; }
+    border-bottom: 1px solid #e62b1e;
+    box-shadow: 0 1px 0 0 #e62b1e; }
     input[type=text]:focus:not([readonly]) + label,
     input[type=password]:focus:not([readonly]) + label,
     input[type=email]:focus:not([readonly]) + label,

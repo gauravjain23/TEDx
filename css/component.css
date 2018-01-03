@@ -63,12 +63,6 @@
     opacity:0;
 }
 
-.grid figcaption h2:hover{
-    	-webkit-transform: translateY(40px) scale(0.25);
-	transform: translateY(40px) scale(0.25);
-
-}
-
 
 .grid figcaption p:hover {
 	-webkit-transform: translateY(-50%) translateX(-50%) scale(1);
