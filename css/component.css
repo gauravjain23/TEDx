@@ -156,11 +156,11 @@ float: left;
 
 @media screen and (max-width: 550px) {
     .grid {
-        width:100%;
+        width:100%;        
     }
 	.grid a {
-		width: 45%;
-        margin: 7px;
+		width: 47%;
+        margin: 3px;
         font-size:10px;
 	}
     .grid figcaption {
