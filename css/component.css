@@ -19,7 +19,7 @@ float: left;
         width: 33%;        	
     }
     .grid figcaption{
-        padding-top:40px;   
+        padding-top:21%;   
     }
     
     
@@ -34,8 +34,43 @@ float: left;
     }
     .grid figcaption h2 {
         padding-bottom:15px;
+        font-size:16px;        
+    }
+    .grid figcaption p {
+        font-size:15px;        
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .grid {
+        width:100%;        
+    }
+	.grid .spk {
+		width: 47%;
+        margin: 3px;
+        font-size:10px;
+	}
+    .grid figcaption {
+        padding-top:25%;
+    }
+    .grid figcaption p {
+        font-size:10px;
+    }
+    .grid figcaption h2 {
+        padding-bottom:10px;
+        font-size:10px;
         
     }
+    
+    /* Hover effects */
+
+
+.grid .spk:hover figcaption h2,
+.grid .spk:hover figcaption p {
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+}
+
 }
 
 .grid figure {
@@ -64,18 +99,16 @@ float: left;
 
 .grid figcaption h2 {	
 	font-weight: 300;
-    font-size:16px;
-	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-	transition: opacity 0.3s, transform 0.3s;
+
+    	-webkit-transition: opacity 0.5s, -webkit-transform 2s;
+	transition: opacity 0.5s, transform 2s;
     	-webkit-transform: translateY(0px) scale(1);
 	transform: translateY(0px) scale(1);
 }
 
 .grid figcaption p {
-    font-size:15px;
-	font-weight: 300;
-	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-	transition: opacity 0.3s, transform 0.3s;
+    	-webkit-transition: opacity 0.5s, -webkit-transform 1s;
+	transition: opacity 0.5s, transform 1s;
     	-webkit-transform: translateY(-50%) translateX(0%) scale(0.25);
 	transform: translateY(-50%) translateX(0%) scale(0.25);
     opacity:0;
@@ -88,21 +121,9 @@ float: left;
 
 }
 
-.grid figure button {
-	position: absolute;
-	padding: 4px 20px;
-	border: none;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: bold;
-	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-	transition: opacity 0.3s, transform 0.3s;
-}
-
 .grid figcaption,
 .grid figcaption h2,
-.grid figcaption p,
-.grid figure button {
+.grid figcaption p {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -118,26 +139,28 @@ float: left;
 
 .grid .spk svg .st0{
     fill:#FF0000;
-    fill-opacity:0;    	
-    -webkit-transition:-webkit-transform 0.3s;
-	transition: transform 0.3s;
+    fill-opacity:0.4;    	
+       	-webkit-transform: translateY(120px);
+	transform: translateY(120px) ;
+    	-webkit-transition: opacity 0.5s, -webkit-transform 2s;
+	transition: opacity 0.5s, transform 2s;
 }
 
  .grid .spk:hover svg .st0{
         fill-opacity:0.4; 
-
        	-webkit-transform: translateY(-64px);
 	transform: translateY(-64px) ;
-    	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-	transition: opacity 0.3s, transform 0.3s;
+    	-webkit-transition: opacity 0.5s, -webkit-transform 2s;
+	transition: opacity 0.5s, transform 2s;
 }
 
 .grid .spk svg .st1{
-    
     fill:aqua;
-    fill-opacity:0;    	
-    -webkit-transition:opacity 0.3s,-webkit-transform 0.3s;
-	transition:opacity 0.3s, transform 0.3s;
+    fill-opacity:0.4;    	
+       	-webkit-transform: translateY(120px);
+	transform: translateY(120px) ;
+    	-webkit-transition: opacity 0.5s, -webkit-transform 2s;
+	transition: opacity 0.5s, transform 2s;
 }
 
  .grid .spk:hover svg .st1{
@@ -145,8 +168,8 @@ float: left;
 
        	-webkit-transform: translateY(-64px);
 	transform: translateY(-64px) ;
-    	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-	transition: opacity 0.3s, transform 0.3s;
+    	-webkit-transition: opacity 0.5s, -webkit-transform 2s;
+	transition: opacity 0.5s, transform 2s;
 }
 
 .overlayr {
@@ -216,32 +239,3 @@ float: left;
 /* Media Queries */
 /* Let's redefine the width of each anchor and the margins */
 
-@media screen and (max-width: 550px) {
-    .grid {
-        width:100%;        
-    }
-	.grid .spk {
-		width: 47%;
-        margin: 3px;
-        font-size:10px;
-	}
-    .grid figcaption {
-        padding: 5px;
-    }
-    .grid figcaption p {
-        font-size:12px;
-    }
-    
-    /* Hover effects */
-
-
-.grid .spk:hover figcaption h2,
-.grid .spk:hover figcaption p {
-	-webkit-transform: translateY(5px);
-	transform: translateY(5px);
-}
-
-
-
-
-}
