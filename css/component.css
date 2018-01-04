@@ -19,7 +19,8 @@ float: left;
         width: 33%;        	
     }
     .grid figcaption{
-        padding-top:21%;   
+        padding-top:21%;  
+        line-height: normal;
     }
     
     
@@ -52,6 +53,7 @@ float: left;
 	}
     .grid figcaption {
         padding-top:25%;
+        line-height: normal;
     }
     .grid figcaption p {
         font-size:10px;
