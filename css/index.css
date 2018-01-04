@@ -144,19 +144,19 @@ h6 {
 	}
 }
 
-.highlighttext .highlighter-name {
+.highlighttext .highlighter-name,.highlighttext .highlighter-namea {
 	padding: 0 0.35em;
     position: relative;
 }
 
-.highlighttext .highlighter-name::before {
+.highlighttext .highlighter-name::before,.highlighttext .highlighter-namea::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	height: 32%;
-	opacity: 0.3;
+	opacity: 0.7;
 	-webkit-animation: highlight 5s infinite;
 	animation: highlight 5s infinite;
 	-webkit-animation-delay: 0s;
@@ -166,7 +166,13 @@ h6 {
 }
 .highlighttext .highlighter .highlighter-name::before {
 	background: aqua;
-	opacity:0.3;
+	opacity:0.7;
+
+}
+
+.highlighttext .highlighter .highlighter-namea::before {
+	background: #ff0000;
+	opacity:0.7;
 
 }
 @media screen and (max-width: 50em) {

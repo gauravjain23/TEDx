@@ -3,7 +3,7 @@
     max-width: 1000px;
 }
 
-.grid a {
+.grid .spk {
     max-width: 275px;
 float: left;
 	
@@ -14,7 +14,7 @@ float: left;
         margin: 10px auto 20px;
       	width: 90%;
     }
-    .grid a {    
+    .grid .spk {    
         padding:22px;
         width: 33%;        	
     }
@@ -26,8 +26,8 @@ float: left;
         /* Hover effects */
 
 
-    .grid a:hover figcaption h2,
-    .grid a:hover figcaption p {
+    .grid .spk:hover figcaption h2,
+    .grid .spk:hover figcaption p {
         
         -webkit-transform: translateY(20px);
         transform: translateY(20px);
@@ -116,14 +116,14 @@ float: left;
     height: 100%;
 }
 
-.grid a svg .st0{
+.grid .spk svg .st0{
     fill:#FF0000;
     fill-opacity:0;    	
     -webkit-transition:-webkit-transform 0.3s;
 	transition: transform 0.3s;
 }
 
- .grid a:hover svg .st0{
+ .grid .spk:hover svg .st0{
         fill-opacity:0.4; 
 
        	-webkit-transform: translateY(-64px);
@@ -132,7 +132,7 @@ float: left;
 	transition: opacity 0.3s, transform 0.3s;
 }
 
-.grid a svg .st1{
+.grid .spk svg .st1{
     
     fill:aqua;
     fill-opacity:0;    	
@@ -140,7 +140,7 @@ float: left;
 	transition:opacity 0.3s, transform 0.3s;
 }
 
- .grid a:hover svg .st1{
+ .grid .spk:hover svg .st1{
          fill-opacity:0.4;  
 
        	-webkit-transform: translateY(-64px);
@@ -175,7 +175,7 @@ float: left;
     	
 }
 
-.grid a:hover .overlaya,.grid a:hover .overlayr {
+.grid .spk:hover .overlaya,.grid .spk:hover .overlayr {
 	opacity: 0;
 }
 
@@ -187,13 +187,11 @@ float: left;
 	color:#fff;
 }
 
-
-
-.grid a:hover figcaption p {
+.grid .spk:hover figcaption p {
 	opacity: 1;
 }
 
-.grid a:hover figcaption h2 {
+.grid .spk:hover figcaption h2 {
 	opacity: 0;
 }
 
@@ -222,7 +220,7 @@ float: left;
     .grid {
         width:100%;        
     }
-	.grid a {
+	.grid .spk {
 		width: 47%;
         margin: 3px;
         font-size:10px;
@@ -237,8 +235,8 @@ float: left;
     /* Hover effects */
 
 
-.grid a:hover figcaption h2,
-.grid a:hover figcaption p {
+.grid .spk:hover figcaption h2,
+.grid .spk:hover figcaption p {
 	-webkit-transform: translateY(5px);
 	transform: translateY(5px);
 }
