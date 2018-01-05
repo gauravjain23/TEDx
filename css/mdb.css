@@ -5887,7 +5887,8 @@ button:focus {
     flex-direction: row; }
   @media (max-width: 992px) {
     .navbar .container {
-      width: 100%; }
+      width: 100%; 
+      }
       .navbar .container .navbar-toggler-right {
         right: 0; } }
   .navbar.navbar-dark .navbar-nav .nav-item .nav-link.disabled, .navbar.navbar-dark .navbar-nav .nav-item .nav-link.disabled:hover {
@@ -6033,8 +6034,7 @@ button:focus {
       color: #fff;
       font-weight: 300; }
   .navbar.scrolling-navbar {
-      z-index: 100; 
-      position: fixed;
+    z-index: 100; 
     }
     @media (min-width: 600px) {
       .navbar.scrolling-navbar {
