@@ -6033,7 +6033,9 @@ button:focus {
       color: #fff;
       font-weight: 300; }
   .navbar.scrolling-navbar {
-    z-index: 100; }
+      z-index: 100; 
+      position: fixed;
+    }
     @media (min-width: 600px) {
       .navbar.scrolling-navbar {
         -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
