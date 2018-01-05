@@ -208,11 +208,7 @@ h6 {
 	opacity:0.6;
 
 }
-@media screen and (max-width: 50em) {
-	.highlighttext .highlighter {
-		margin: 0 0 2em;
-	}
-}
+
 
 @-webkit-keyframes highlight {
 	0% {

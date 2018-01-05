@@ -47,12 +47,12 @@ float: left;
         width:100%;        
     }
 	.grid .spk {
-		width: 47%;
-        margin: 3px;
+		width: 48%;
+        margin: 2px;
         font-size:10px;
 	}
     .grid figcaption {
-        padding-top:30%;
+        padding-top:25%;
         line-height: normal;
     }
     .grid figcaption p {
@@ -63,15 +63,14 @@ float: left;
         font-size:11px;
         
     }
-    
+       
     /* Hover effects */
 
-
-.grid .spk:hover figcaption h2,
-.grid .spk:hover figcaption p {
-	-webkit-transform: translateY(5px);
-	transform: translateY(5px);
-}
+    .grid .spk:hover figcaption h2,
+    .grid .spk:hover figcaption p {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
 
 }
 
@@ -144,16 +143,16 @@ float: left;
     fill-opacity:0.4;    	
        	-webkit-transform: translateY(120px);
 	transform: translateY(120px) ;
-    	-webkit-transition: opacity 0.5s, -webkit-transform 2s;
-	transition: opacity 0.5s, transform 2s;
+    	-webkit-transition: opacity 0.5s, -webkit-transform 1s;
+	transition: opacity 0.5s, transform 1s;
 }
 
  .grid .spk:hover svg .st0{
         fill-opacity:0.4; 
        	-webkit-transform: translateY(-64px);
 	transform: translateY(-64px) ;
-    	-webkit-transition: opacity 0.5s, -webkit-transform 2s;
-	transition: opacity 0.5s, transform 2s;
+    	-webkit-transition: opacity 0.5s, -webkit-transform 1s;
+	transition: opacity 0.5s, transform 1s;
 }
 
 .grid .spk svg .st1{
@@ -161,8 +160,8 @@ float: left;
     fill-opacity:0.4;    	
        	-webkit-transform: translateY(120px);
 	transform: translateY(120px) ;
-    	-webkit-transition: opacity 0.5s, -webkit-transform 2s;
-	transition: opacity 0.5s, transform 2s;
+    	-webkit-transition: opacity 0.5s, -webkit-transform 1s;
+	transition: opacity 0.5s, transform 1s;
 }
 
  .grid .spk:hover svg .st1{
@@ -170,8 +169,8 @@ float: left;
 
        	-webkit-transform: translateY(-64px);
 	transform: translateY(-64px) ;
-    	-webkit-transition: opacity 0.5s, -webkit-transform 2s;
-	transition: opacity 0.5s, transform 2s;
+    	-webkit-transition: opacity 0.5s, -webkit-transform 1s;
+	transition: opacity 0.5s, transform 1s;
 }
 
 .overlayr {
@@ -220,24 +219,4 @@ float: left;
 	opacity: 0;
 }
 
-.grid figure button,{
-	top: 50%;
-	left: 50%;
-	border: 3px solid #fff;
-	background: transparent;
-	color: #fff;
-	opacity: 0;
-	-webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
-	transform: translateY(-50%) translateX(-50%) scale(0.25);
-}
-
-.grid a:hover figure button {
-	opacity: 1;
-	-webkit-transform: translateY(-50%) translateX(-50%) scale(1);
-	transform: translateY(-50%) translateX(-50%) scale(1);
-}
-
-
-/* Media Queries */
-/* Let's redefine the width of each anchor and the margins */
 
