@@ -462,8 +462,146 @@
                     
                     <div id="map" class="col-sm-6 col-xs-12 pt-5 px-0">
                                                         
-                        <iframe width=100% height=100% frameborder="0" style="border:2px solid #e62b1e;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJf3iBnifG5zsRYLpPMcdMXSQ&key=AIzaSyDRBmZOu_TAou6zkVtGTcVuji2tnush-Kg" allowfullscreen>
-                        </iframe>
+                        <script>
+                          function initMap() {
+
+                            // Create a new StyledMapType object, passing it an array of styles,
+                            // and the name to be displayed on the map type control.
+                            var styledMapType = new google.maps.StyledMapType(
+            [
+              {elementType: 'geometry', stylers: [{color: '#e24e4e'},{"lightness": 25}]},
+              {elementType: 'labels.text.fill', stylers: [{color: '#00ffff'}]},
+              {elementType: 'labels.text.stroke', stylers: [{color: '#000000'}]},
+              {
+                featureType: 'administrative',
+                elementType: 'geometry.stroke',
+                stylers: [{color: '#e24e4e'}]
+              },
+              {
+                featureType: 'administrative.land_parcel',
+                elementType: 'geometry.stroke',
+                stylers: [{color: '#e24e4e'}]
+              },
+              {
+                featureType: 'administrative.land_parcel',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#00ffff'}]
+              },
+              {
+                featureType: 'landscape.natural',
+                elementType: 'geometry',
+                stylers: [{color: '#e24e4e'}]
+              },
+              {
+                featureType: 'poi',
+                elementType: 'geometry',
+                stylers: [{color: '#e24e4e'},{"lightness": 15}]
+              },
+              {
+                featureType: 'poi',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#00ffff'}]
+              },
+              {
+                featureType: 'poi.park',
+                elementType: 'geometry.fill',
+                stylers: [{color: '#e24e4e'}]
+              },
+              {
+                featureType: 'poi.park',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#00ffff'}]
+              },
+              {
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [{color: '#e24e4e'}]
+              },
+              {
+                featureType: 'road.arterial',
+                elementType: 'geometry',
+                stylers: [{color: '#e24e4e'}]
+              },
+              {
+                featureType: 'road.highway',
+                elementType: 'geometry',
+                stylers: [{color: '#e24e4e'}]
+              },
+              {
+                featureType: 'road.highway',
+                elementType: 'geometry.stroke',
+                stylers: [{color: '#e24e4e'}]
+              },
+              {
+                featureType: 'road.highway.controlled_access',
+                elementType: 'geometry',
+                stylers: [{color: '#e24e4e'}]
+              },
+              {
+                featureType: 'road.highway.controlled_access',
+                elementType: 'geometry.stroke',
+                stylers: [{color: '#e24e4e'}]
+              },
+              {
+                featureType: 'road.local',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#00ffff'}]
+              },
+              {
+                featureType: 'transit.line',
+                elementType: 'geometry',
+                stylers: [{color: '#e24e4e'}]
+              },
+              {
+                featureType: 'transit.line',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#e24e4e'}]
+              },
+              {
+                featureType: 'transit.line',
+                elementType: 'labels.text.stroke',
+                stylers: [{color: '#000000'}]
+              },
+              {
+                featureType: 'transit.station',
+                elementType: 'geometry',
+                stylers: [{color: '#e24e4e'}]
+              },
+              {
+                featureType: 'water',
+                elementType: 'geometry.fill',
+                stylers: [{color: '#00ffff'}]
+              },
+              {
+                featureType: 'water',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#00ffff'}]
+              }
+            ],
+            {name: 'Styled Map'});
+
+                            // Create a map object, and include the MapTypeId to add
+                            // to the map type control.
+                              var myCenter = new google.maps.LatLng(19.073084, 72.899822);
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                              center: myCenter,
+                              zoom: 17,
+                              mapTypeControlOptions: {
+                                mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                                        'styled_map']
+                              }
+                            });
+                              var marker = new google.maps.Marker({position:myCenter});
+                                marker.setMap(map);
+
+                            //Associate the styled map with the MapTypeId and set it to display.
+                            map.mapTypes.set('styled_map', styledMapType);
+                            map.setMapTypeId('styled_map');
+                          }
+                        </script>
+                        <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzz-A6jSj4wSausvYI0bUW3_hFtt5RMZc&callback=initMap">
+                        </script>       
                         
                         
                     </div>
