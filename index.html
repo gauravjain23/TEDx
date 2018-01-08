@@ -20,6 +20,7 @@
     <!--link rel="stylesheet" type="text/css" href="css/mdb.min.css"-->
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/componentb.css" />
     <script src="js/snap.svg-min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
@@ -420,12 +421,58 @@
         </div>
         
         <!--End Theme-->
+        <!--Start Blog-->
+        <div id="blog">
+            <div class="container pt-5">
+                <div class="highlighttext">                            
+                    <h2 class="highlighter" data-wow-delay="0.3s"  style="color:#e62b1e"><span class=" highlighter-name"><b>BLOG</b></span></h2> 
+                </div>
+                <div class="col-sm-12">
+                <ul class="gridb cs-style-3">
+                    <li>
+                        <a href="svv17.html">
+                            <figure>
+                                <img src="img/4.jpg" alt="img04">
+                                <figcaption>
+                                    <h3>Blog Title 457</h3>
+                                    <i><span>25th January 2018</span></i>                                
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="svv17.html">
+                            <figure>
+                                <img src="img/4.jpg" alt="img04">
+                                <figcaption>
+                                    <h3>Blog Title 457</h3>
+                                    <i><span>25th January 2018</span></i>                                
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="svv17.html">
+                            <figure>
+                                <img src="img/4.jpg" alt="img04">
+                                <figcaption>
+                                    <h3>Blog Title 457</h3>
+                                    <i><span>25th January 2018</span></i>                                
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+			     </ul>
+                </div>
+            </div>
+        </div>
+        <!--End Blog-->
         <!--Start Contact-->
         <div id="contact">
-            <div class="container pt-5">
+            <div class="container">
                 
                 <div class="row">
-                    <div class="col-sm-6 col-xs-12 pt-5">
+                    <div class="col-sm-6 col-xs-12 ">
 
                             <div class="col-12">
                                 <div class="highlighttext">                            
@@ -468,117 +515,117 @@
                             // Create a new StyledMapType object, passing it an array of styles,
                             // and the name to be displayed on the map type control.
                             var styledMapType = new google.maps.StyledMapType(
-            [
-              {elementType: 'geometry', stylers: [{color: '#e24e4e'},{"lightness": 25}]},
-              {elementType: 'labels.text.fill', stylers: [{color: '#00ffff'}]},
-              {elementType: 'labels.text.stroke', stylers: [{color: '#000000'}]},
-              {
-                featureType: 'administrative',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#e24e4e'}]
-              },
-              {
-                featureType: 'administrative.land_parcel',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#e24e4e'}]
-              },
-              {
-                featureType: 'administrative.land_parcel',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#00ffff'}]
-              },
-              {
-                featureType: 'landscape.natural',
-                elementType: 'geometry',
-                stylers: [{color: '#e24e4e'}]
-              },
-              {
-                featureType: 'poi',
-                elementType: 'geometry',
-                stylers: [{color: '#e24e4e'},{"lightness": 15}]
-              },
-              {
-                featureType: 'poi',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#00ffff'}]
-              },
-              {
-                featureType: 'poi.park',
-                elementType: 'geometry.fill',
-                stylers: [{color: '#e24e4e'}]
-              },
-              {
-                featureType: 'poi.park',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#00ffff'}]
-              },
-              {
-                featureType: 'road',
-                elementType: 'geometry',
-                stylers: [{color: '#e24e4e'}]
-              },
-              {
-                featureType: 'road.arterial',
-                elementType: 'geometry',
-                stylers: [{color: '#e24e4e'}]
-              },
-              {
-                featureType: 'road.highway',
-                elementType: 'geometry',
-                stylers: [{color: '#e24e4e'}]
-              },
-              {
-                featureType: 'road.highway',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#e24e4e'}]
-              },
-              {
-                featureType: 'road.highway.controlled_access',
-                elementType: 'geometry',
-                stylers: [{color: '#e24e4e'}]
-              },
-              {
-                featureType: 'road.highway.controlled_access',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#e24e4e'}]
-              },
-              {
-                featureType: 'road.local',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#00ffff'}]
-              },
-              {
-                featureType: 'transit.line',
-                elementType: 'geometry',
-                stylers: [{color: '#e24e4e'}]
-              },
-              {
-                featureType: 'transit.line',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#e24e4e'}]
-              },
-              {
-                featureType: 'transit.line',
-                elementType: 'labels.text.stroke',
-                stylers: [{color: '#000000'}]
-              },
-              {
-                featureType: 'transit.station',
-                elementType: 'geometry',
-                stylers: [{color: '#e24e4e'}]
-              },
-              {
-                featureType: 'water',
-                elementType: 'geometry.fill',
-                stylers: [{color: '#00ffff'}]
-              },
-              {
-                featureType: 'water',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#00ffff'}]
-              }
-            ],
-            {name: 'Styled Map'});
+                            [
+                              {elementType: 'geometry', stylers: [{color: '#e24e4e'},{"lightness": 25}]},
+                              {elementType: 'labels.text.fill', stylers: [{color: '#00ffff'}]},
+                              {elementType: 'labels.text.stroke', stylers: [{color: '#000000'}]},
+                              {
+                                featureType: 'administrative',
+                                elementType: 'geometry.stroke',
+                                stylers: [{color: '#e24e4e'}]
+                              },
+                              {
+                                featureType: 'administrative.land_parcel',
+                                elementType: 'geometry.stroke',
+                                stylers: [{color: '#e24e4e'}]
+                              },
+                              {
+                                featureType: 'administrative.land_parcel',
+                                elementType: 'labels.text.fill',
+                                stylers: [{color: '#00ffff'}]
+                              },
+                              {
+                                featureType: 'landscape.natural',
+                                elementType: 'geometry',
+                                stylers: [{color: '#e24e4e'}]
+                              },
+                              {
+                                featureType: 'poi',
+                                elementType: 'geometry',
+                                stylers: [{color: '#e24e4e'},{"lightness": 15}]
+                              },
+                              {
+                                featureType: 'poi',
+                                elementType: 'labels.text.fill',
+                                stylers: [{color: '#00ffff'}]
+                              },
+                              {
+                                featureType: 'poi.park',
+                                elementType: 'geometry.fill',
+                                stylers: [{color: '#e24e4e'}]
+                              },
+                              {
+                                featureType: 'poi.park',
+                                elementType: 'labels.text.fill',
+                                stylers: [{color: '#00ffff'}]
+                              },
+                              {
+                                featureType: 'road',
+                                elementType: 'geometry',
+                                stylers: [{color: '#e24e4e'}]
+                              },
+                              {
+                                featureType: 'road.arterial',
+                                elementType: 'geometry',
+                                stylers: [{color: '#e24e4e'}]
+                              },
+                              {
+                                featureType: 'road.highway',
+                                elementType: 'geometry',
+                                stylers: [{color: '#e24e4e'}]
+                              },
+                              {
+                                featureType: 'road.highway',
+                                elementType: 'geometry.stroke',
+                                stylers: [{color: '#e24e4e'}]
+                              },
+                              {
+                                featureType: 'road.highway.controlled_access',
+                                elementType: 'geometry',
+                                stylers: [{color: '#e24e4e'}]
+                              },
+                              {
+                                featureType: 'road.highway.controlled_access',
+                                elementType: 'geometry.stroke',
+                                stylers: [{color: '#e24e4e'}]
+                              },
+                              {
+                                featureType: 'road.local',
+                                elementType: 'labels.text.fill',
+                                stylers: [{color: '#00ffff'}]
+                              },
+                              {
+                                featureType: 'transit.line',
+                                elementType: 'geometry',
+                                stylers: [{color: '#e24e4e'}]
+                              },
+                              {
+                                featureType: 'transit.line',
+                                elementType: 'labels.text.fill',
+                                stylers: [{color: '#e24e4e'}]
+                              },
+                              {
+                                featureType: 'transit.line',
+                                elementType: 'labels.text.stroke',
+                                stylers: [{color: '#000000'}]
+                              },
+                              {
+                                featureType: 'transit.station',
+                                elementType: 'geometry',
+                                stylers: [{color: '#e24e4e'}]
+                              },
+                              {
+                                featureType: 'water',
+                                elementType: 'geometry.fill',
+                                stylers: [{color: '#00ffff'}]
+                              },
+                              {
+                                featureType: 'water',
+                                elementType: 'labels.text.fill',
+                                stylers: [{color: '#00ffff'}]
+                              }
+                            ],
+                            {name: 'Styled Map'});
 
                             // Create a map object, and include the MapTypeId to add
                             // to the map type control.
